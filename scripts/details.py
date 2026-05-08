@@ -21,6 +21,7 @@ def main():
     p.add_argument("--output", default="/tmp/airbnb_results.json")
     p.add_argument("--check-in", default="")
     p.add_argument("--check-out", default="")
+    p.add_argument("--guests", type=int, default=2)
     args = p.parse_args()
 
     with open(args.input, encoding="utf-8") as f:
@@ -45,7 +46,7 @@ def main():
 
     results = []
     for i, c in enumerate(top):
-        url = f"https://www.airbnb.com/rooms/{c['room_id']}?check_in={args.check_in}&check_out={args.check_out}&adults=2"
+        url = f"https://www.airbnb.com/rooms/{c['room_id']}?check_in={args.check_in}&check_out={args.check_out}&adults={args.guests}"
         print(f"  [{i+1}/{len(top)}] {c['name']}...", file=sys.stderr)
 
         try:

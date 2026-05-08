@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Setup: create venv and install dependencies for airbnb-search skill.
+# Setup: create venv and install dependencies for airbnb-agent skill.
 # Run once: bash scripts/setup.sh
 set -e
 

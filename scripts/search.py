@@ -65,7 +65,8 @@ def main():
         bedrooms = 0
         for item in pl:
             if item.get("type") == "BEDINFO":
-                m = re.search(r"(\d+)\s*间卧室", item.get("body", ""))
+                body = item.get("body", "")
+                m = re.search(r"(\d+)\s*(?:间卧室|卧室|bedrooms?|br)", body, re.IGNORECASE)
                 if m:
                     bedrooms = int(m.group(1))
                     break

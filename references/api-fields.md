@@ -69,6 +69,13 @@ When fetching individual listing pages, extract:
 }
 ```
 
+## Usage Notes
+
+- Search uses a coordinate box, not place-name geocoding. Provide `--center-lat` and `--center-lng` for the target area.
+- Run detail analysis with the same `--check-in`, `--check-out`, and `--guests` values used for search.
+- Detail keyword matches are signals only. They can appear in hidden page data or unrelated text, so verify important amenities before booking.
+- Default output paths are `/tmp/airbnb_candidates.json` and `/tmp/airbnb_results.json`; use `--output` to preserve multiple runs.
+
 ## Common Coordinates
 
 | City | Center Lat | Center Lng |

@@ -23,7 +23,7 @@ clawhub install airbnb-agent
 
 ```bash
 git clone https://github.com/Suidge/airbnb-agent.git
-cd pyairbnb-search
+cd airbnb-agent
 bash scripts/setup.sh
 ```
 
@@ -56,6 +56,8 @@ Fetches each listing's detail page and searches for:
 
 Output to `/tmp/airbnb_results.json`.
 
+Keyword matches are signals only. Verify important amenities against the listing page or host before booking.
+
 ## Key Parameters
 
 | Param | Default | Description |
@@ -73,7 +75,7 @@ Common city coordinates available in `references/api-fields.md`.
 ## Skill Structure
 
 ```
-pyairbnb-search/
+airbnb-agent/
 ├── SKILL.md              # Agent-facing instructions & metadata
 ├── scripts/
 │   ├── search.py         # Search + filter script

@@ -1,10 +1,10 @@
 ---
-name: airbnb-search
+name: airbnb-agent
 description: Search Airbnb listings by location, date, and guest count, then filter by price, rating, bedrooms, and keyword match for parking, basement, and renovation details. Use when searching or comparing Airbnb rentals, analyzing listings, or finding short-term stays with specific requirements.
 version: 1.0.0
 ---
 
-# Airbnb Search
+# Airbnb Agent
 
 Search Airbnb via pyairbnb API (no login/browser required), filter by criteria, and analyze listing detail pages for parking, basement, and renovation keywords.
 

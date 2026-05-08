@@ -1,7 +1,7 @@
 ---
 name: airbnb-agent
 slug: airbnb-agent
-version: 1.0.1
+version: 1.0.2
 description: Search Airbnb listings, filter short-term rentals, and analyze detail pages for parking, basement, and renovation signals.
 ---
 

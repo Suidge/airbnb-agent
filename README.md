@@ -1,6 +1,6 @@
-# pyAirbnb Search Skill
+# Airbnb Agent Skill
 
-OpenClaw skill for searching Airbnb listings via the pyairbnb library. Search by location, date, and guest count, then filter by price, rating, bedrooms, and keyword match for parking, basement, and renovation details.
+OpenClaw agent skill for searching Airbnb listings. Search by location, date, and guest count, then filter by price, rating, bedrooms, and keyword match for parking, basement, and renovation details.
 
 ## Features
 
@@ -16,13 +16,13 @@ OpenClaw skill for searching Airbnb listings via the pyairbnb library. Search by
 ### ClawHub
 
 ```bash
-clawhub install pyairbnb-search
+clawhub install airbnb-agent
 ```
 
 ### Manual
 
 ```bash
-git clone https://github.com/Suidge/pyairbnb-search.git
+git clone https://github.com/Suidge/airbnb-agent.git
 cd pyairbnb-search
 bash scripts/setup.sh
 ```
